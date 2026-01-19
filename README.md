@@ -1,5 +1,7 @@
 # TaylorBall
 
+[![CI](https://github.com/joshknowsbaseball/TaylorBall/actions/workflows/ci.yml/badge.svg)](https://github.com/joshknowsbaseball/TaylorBall/actions) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshknowsbaseball/TaylorBall/HEAD) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joshknowsbaseball/TaylorBall/blob/main/notebooks/01-exploration.ipynb) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+
 TaylorBall is a senior-year project that simulates Major League Baseball games and seasons using historical datasets. Notebooks progress through three stages — basic probabilistic simulations, player/lineup-level simulations, and advanced plate-appearance/model-based approaches — and include validation comparing simulated outcomes to historical records.
 
 ## Project summary
