@@ -1,6 +1,6 @@
 # TaylorBall
 
-A reproducible project that simulates Major League Baseball (MLB) games and seasons using historical data to validate simulation probabilities. This repository contains Jupyter notebooks and supporting code used during a senior-year research project.
+MLB simulation pipeline using historical data to validate simulation probabilities.
 
 ## Project summary
 
