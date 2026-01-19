@@ -1,6 +1,6 @@
 # TaylorBall
 
-MLB simulation pipeline using historical data to validate simulation probabilities.
+TaylorBall is a senior-year project that simulates Major League Baseball games and seasons using historical datasets. Notebooks progress through three stages — basic probabilistic simulations, player/lineup-level simulations, and advanced plate-appearance/model-based approaches — and include validation comparing simulated outcomes to historical records.
 
 ## Project summary
 
