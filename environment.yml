@@ -1,0 +1,14 @@
+name: taylorball
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - jupyterlab
+  - pandas
+  - numpy
+  - matplotlib
+  - scipy
+  - seaborn
+  - pip
+  - pip:
+    - tabulate
