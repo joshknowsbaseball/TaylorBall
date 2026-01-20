@@ -1,34 +1,120 @@
 # TaylorBall
 
-[![CI](https://github.com/joshknowsbaseball/TaylorBall/actions/workflows/ci.yml/badge.svg)](https://github.com/joshknowsbaseball/TaylorBall/actions) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joshknowsbaseball/TaylorBall/HEAD) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joshknowsbaseball/TaylorBall/blob/main/notebooks/01-exploration.ipynb) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+## Senior Project – Baseball Analytics & Simulation
 
-TaylorBall is a senior-year project that simulates Major League Baseball games and seasons using historical datasets. Notebooks progress through three stages — basic probabilistic simulations, player/lineup-level simulations, and advanced plate-appearance/model-based approaches — and include validation comparing simulated outcomes to historical records.
+**TaylorBall** is a senior project developed as part of my undergraduate studies, combining baseball research, data analysis, and simulation modeling. The project explores how statistical modeling can be used to better understand player performance and team outcomes, with a focus on translating traditional and modern baseball data into actionable insights.
 
-## Project summary
+This repository represents the final form of the project as submitted for academic credit, along with supporting analysis and documentation.
 
-TaylorBall implements a multi-stage simulation pipeline that ranges from basic probabilistic simulations to more advanced, data-driven models. The primary goals are:
-- Simulate games and seasons using historical player and team statistics
-- Estimate and verify the probabilities produced by simulation against real outcomes
-- Provide a reproducible environment for experimentation and extension
+---
 
-## Contents
+## Project Overview
 
-- Jupyter notebooks (primary work): explore the data, run simulations, and visualize results.
-- data/ (recommended): data files or small derivatives used by the notebooks. Raw/proprietary datasets are not included — scripts should be used to fetch or reconstruct them.
-- docs/ (optional): expanded project documentation or results.
-- src/ (optional): helper scripts and modules used by the notebooks.
+The goal of TaylorBall is to:
 
-Note: This repository currently consists primarily of Jupyter Notebooks.
+* Apply statistical and analytical techniques to baseball data
+* Simulate aspects of baseball performance and outcomes
+* Explore how data-driven methods can complement traditional baseball evaluation
 
-## Project stages
+The project draws inspiration from professional baseball analytics departments and public sabermetric research, with an emphasis on clear methodology and reproducible results.
 
-1. Basic — simple game-level simulation using aggregated probabilities (e.g., batting average, slugging).
-2. Intermediate — player-level simulations with lineups, substitutions, and basic situational modeling.
-3. Advanced — richer models (e.g., plate-appearance models, pitch-level features, Bayesian updating) and stricter validation versus historical outcomes.
+---
 
-## Getting started
+## Academic Context
 
-Prerequisites
-- Python 3.8+ recommended
-- Git
-- JupyterLab or Jupyter Notebook
+* **Project Type:** Final Project
+* **Field of Study:** Baseball Analytics / Data Science / Sports Analytics
+* **Tools Used:** Python, Jupyter Notebooks
+* **Data Sources:** Publicly available baseball datasets (e.g., Lahman-style historical data)
+
+This project was completed independently and reflects my ability to:
+
+* Design and scope a long-term research project
+* Work with real-world datasets
+* Communicate results through code, visualizations, and written analysis
+
+---
+
+## Repository Structure
+
+```
+TaylorBall/
+│
+├── notebooks/        # Jupyter notebooks containing analysis and simulations
+├── data/             # (Optional) Data files or instructions for obtaining data
+├── requirements.txt  # Python dependencies
+├── environment.yml   # Conda environment configuration
+├── LICENSE           # MIT License
+└── README.md         # Project documentation
+```
+
+*Note: Most project logic and analysis currently lives inside Jupyter notebooks, as the project was developed in an academic research context.*
+
+---
+
+## How to Run the Project
+
+### Option 1: Using pip
+
+```bash
+pip install -r requirements.txt
+jupyter notebook
+```
+
+### Option 2: Using conda
+
+```bash
+conda env create -f environment.yml
+conda activate taylorball
+jupyter notebook
+```
+
+Open the notebooks in the `notebooks/` directory and run the cells in order to reproduce the analysis.
+
+---
+
+## Key Concepts Explored
+
+* Baseball performance metrics
+* Probabilistic and statistical modeling
+* Simulation-based analysis
+* Historical baseball data interpretation
+
+---
+
+## Results & Findings
+
+The notebooks include:
+
+* Exploratory data analysis of baseball datasets
+* Custom metrics and modeling approaches
+* Simulated scenarios to evaluate player or team performance
+
+Interpretations and conclusions are discussed directly within the notebooks to mirror the structure of an academic research paper.
+
+---
+
+## Limitations & Future Work
+
+As a senior project, TaylorBall prioritizes clarity and exploration over production-level optimization. Potential future improvements include:
+
+* Refactoring reusable logic into standalone Python modules
+* Adding automated tests
+* Expanding simulations to additional seasons or datasets
+* Improving documentation for external contributors
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
+
+## Author
+
+**Josh Taylor**
+Senior Project – Undergraduate Studies
+
+This repository is intended to showcase academic research, technical skills, and interest in baseball analytics.
+
