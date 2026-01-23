@@ -1,120 +1,66 @@
 # TaylorBall
 
-## Senior Project – Baseball Analytics & Simulation
+A reproducible MLB game and season simulation project using historical data. Built as a senior project exploring how statistical modeling can predict player performance and team outcomes.
 
-**TaylorBall** is a senior project developed as part of my undergraduate studies, combining baseball research, data analysis, and simulation modeling. The project explores how statistical modeling can be used to better understand player performance and team outcomes, with a focus on translating traditional and modern baseball data into actionable insights.
+## What This Project Does
 
-This repository represents the final form of the project as submitted for academic credit, along with supporting analysis and documentation.
+TaylorBall implements **three progressive stages of baseball simulation**:
 
----
+1. **Stage 1: Simple Probabilistic Model** — Basic win probability using league-average outcomes
+2. **Stage 2: Team-Level Adjustments** — Incorporates team offensive and pitching metrics
+3. **Stage 3: Player-Level Simulation** — Models individual batter-pitcher matchups using historical stats
 
-## Project Overview
+Each stage builds on the previous one, with validation comparing simulated seasons against actual historical records.
 
-The goal of TaylorBall is to:
+## Quick Start
 
-* Apply statistical and analytical techniques to baseball data
-* Simulate aspects of baseball performance and outcomes
-* Explore how data-driven methods can complement traditional baseball evaluation
-
-The project draws inspiration from professional baseball analytics departments and public sabermetric research, with an emphasis on clear methodology and reproducible results.
-
----
-
-## Academic Context
-
-* **Project Type:** Final Project
-* **Field of Study:** Baseball Analytics / Data Science / Sports Analytics
-* **Tools Used:** Python, Jupyter Notebooks
-* **Data Sources:** Publicly available baseball datasets (e.g., Lahman-style historical data)
-
-This project was completed independently and reflects my ability to:
-
-* Design and scope a long-term research project
-* Work with real-world datasets
-* Communicate results through code, visualizations, and written analysis
-
----
-
-## Repository Structure
-
-```
-TaylorBall/
-│
-├── notebooks/        # Jupyter notebooks containing analysis and simulations
-├── data/             # (Optional) Data files or instructions for obtaining data
-├── requirements.txt  # Python dependencies
-├── environment.yml   # Conda environment configuration
-├── LICENSE           # MIT License
-└── README.md         # Project documentation
-```
-
-*Note: Most project logic and analysis currently lives inside Jupyter notebooks, as the project was developed in an academic research context.*
-
----
-
-## How to Run the Project
-
-### Option 1: Using pip
-
+### Option 1: pip
 ```bash
 pip install -r requirements.txt
-jupyter notebook
+jupyter notebook TaylorBall.ipynb
 ```
 
-### Option 2: Using conda
-
+### Option 2: conda
 ```bash
 conda env create -f environment.yml
 conda activate taylorball
-jupyter notebook
+jupyter notebook TaylorBall.ipynb
 ```
 
-Open the notebooks in the `notebooks/` directory and run the cells in order to reproduce the analysis.
+## Data Sources
 
----
+This project uses publicly available baseball data:
+- [Lahman Database](http://www.seanlahman.com/baseball-archive/statistics/) — Historical statistics from 1871-present
+- [Retrosheet](https://www.retrosheet.org/) — Play-by-play game logs
 
-## Key Concepts Explored
+## Key Findings
 
-* Baseball performance metrics
-* Probabilistic and statistical modeling
-* Simulation-based analysis
-* Historical baseball data interpretation
+*(Add 2-3 bullet points summarizing your most interesting results, e.g.:)*
+- The Stage 3 model predicted season win totals within X games for Y% of teams
+- Run differential proved to be the strongest single predictor of...
+- Monte Carlo simulations showed that playoff outcomes have higher variance than...
 
----
+## Project Context
 
-## Results & Findings
+| | |
+|---|---|
+| **Type** | Senior Capstone Project |
+| **Focus** | Baseball Analytics / Sports Data Science |
+| **Tools** | Python, Jupyter, pandas, NumPy, matplotlib |
 
-The notebooks include:
-
-* Exploratory data analysis of baseball datasets
-* Custom metrics and modeling approaches
-* Simulated scenarios to evaluate player or team performance
-
-Interpretations and conclusions are discussed directly within the notebooks to mirror the structure of an academic research paper.
-
----
+This project demonstrates end-to-end analytical work: scoping a research question, acquiring and cleaning real-world data, building progressively complex models, and validating results against ground truth.
 
 ## Limitations & Future Work
 
-As a senior project, TaylorBall prioritizes clarity and exploration over production-level optimization. Potential future improvements include:
-
-* Refactoring reusable logic into standalone Python modules
-* Adding automated tests
-* Expanding simulations to additional seasons or datasets
-* Improving documentation for external contributors
-
----
+- Current model uses season-level stats; pitch-by-pitch data could improve accuracy
+- Simulation assumes independent at-bats (doesn't model hot/cold streaks)
+- Could extend to project prospect performance or evaluate trades
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
-## Author
-
-**Josh Taylor**
-Senior Project – Undergraduate Studies
-
-This repository is intended to showcase academic research, technical skills, and interest in baseball analytics.
-
+**Author:** Josh Taylor  
+**Contact:** [joshknowsbaseball](https://github.com/joshknowsbaseball)
